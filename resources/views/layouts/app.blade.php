@@ -7,6 +7,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>@yield('title', 'LaraBBS') - 星的天空</title>
+  <meta name="description" content="@yield('description', '全世界最小的社区')">
   <!-- Styles -->
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   @yield('styles')

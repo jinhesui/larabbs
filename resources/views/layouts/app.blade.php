@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title', 'LaraBBS') - 星的天空</title>
-  <meta name="description" content="@yield('description', '全世界最小的社区')">
+  <title>@yield('title', 'LaraBBS') - {{ setting('site_name', '星的天空') }}</title>
+  <meta name="description" content="@yield('description', setting('seo_description', '世界上最小的社区'))">
+  <meta name="keywords" content="@yield('keyword', setting('seo_keyword', '论坛，社区，开发者社区'))">
   <!-- Styles -->
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   @yield('styles')
